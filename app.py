@@ -5,6 +5,6 @@ app = Flask(__name__)
 
 @app.route("/", methods = ['GET', 'POST'])
 def hello_world():
-    return render_template('test2.html')
+    return render_template('homepage.html')
 
 app.run(debug=True, port=8090)
