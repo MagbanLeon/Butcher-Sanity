@@ -1,0 +1,7 @@
+.navigationbar {
+    border: 5px;
+    border-color: black;
+    width: 100%;
+    height: 50%;
+    position: center;
+}
