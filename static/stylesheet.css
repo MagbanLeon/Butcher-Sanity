@@ -1,7 +1,32 @@
 .navigationbar {
-  border: 5px solid black;
-  background-color: rgb(207, 180, 122);
-  width: 75%;
-  height: 5%;
+  /* border: 1px solid black; */
+  background-color: rgb(255, 231, 194);
+  top: 5%;
+  width: 90%;
   position: fixed;
+  display: table-row;
+  margin-left: 5%;
+}
+.blackbar{
+  border: 3px solid black;
+  margin-bottom: 0;
+}
+.logoButton{
+  /* border: 1px solid black; */
+  display: table-cell;
+  width: 320px;
+}
+.buttonBox{
+  /* border: 1px solid black; */
+  width: 10px;
+  display: table-cell;
+}
+.spacer{
+  border: 1px solid rgb(221, 13, 13);
+  width: 2500px;
+  display: table-cell;
+}
+.border{
+  border: 1px solid black;
+  width: 20px;
 }
