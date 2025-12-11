@@ -11,6 +11,11 @@
   border: 3px solid black;
   margin-bottom: 0;
 }
+.verticalbar{
+  border: 3px solid black;
+  height: 50px;
+  display: table-cell;
+}
 .logoButton{
   /* border: 1px solid black; */
   display: table-cell;
@@ -18,12 +23,16 @@
 }
 .buttonBox{
   /* border: 1px solid black; */
-  width: 10px;
   display: table-cell;
 }
-.spacer{
-  border: 1px solid rgb(221, 13, 13);
+.spacer1{
+  /* border: 1px solid rgb(221, 13, 13); */
   width: 2500px;
+  display: table-cell;
+}
+.spacer2{
+  /* border: 1px solid rgb(221, 13, 13); */
+  width: 25px;
   display: table-cell;
 }
 .border{
