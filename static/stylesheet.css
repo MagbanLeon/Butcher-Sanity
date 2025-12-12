@@ -1,6 +1,6 @@
 .navigationbar {
   /* border: 1px solid black; */
-  background-color: rgb(255, 231, 194);
+  /* background-color: rgb(255, 231, 194); */
   top: 5%;
   width: 90%;
   position: fixed;
@@ -51,10 +51,19 @@
 }
 
 .carouselSize{
-  margin-top:4.35%;
+  margin-top:5.3%;
   height: 600px;
   width: 100vw;
   position: center;
   background-color: rgb(255, 255, 255);
   border: 8px solid black;
+}
+.animal{
+  height: 400px;
+  /* justify-content: center;
+  align-items: center; */
+  display: block;
+  margin: auto;
+  /* border: 1px solid rgb(180, 14, 14); */
+  margin-top: -40px;
 }
