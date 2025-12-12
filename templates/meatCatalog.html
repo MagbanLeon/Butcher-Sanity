@@ -3,11 +3,90 @@
 <head>
     <title>The Slaughter's on!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='carousel.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='collapse.css') }}">
 </head>
-
-<body>
+<!-- 
+HTML Carousel:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels 
+ -->
+<body style="background-color:rgb(255, 231, 194);">
     <div>{% include 'navbar.html' %}</div>
-    <div>catalog</div>
+    <!-- Carousel -->
+    <div class="carouselSize">
+        <h1>Interactive Page Selection</h1>
+        <ul>
+        <li>
+            <h2><img src="../static/animals/cow.png" class="animal">
+                <a href="/loginPage" class="button1">
+                    BEEF
+                </a>
+            </h2>
+        </li>
+        <li>
+            <h2><img src="../static/animals/chicken.png" class="animal"></h2>
+        </li>
+        <li>
+            <h2><img src="../static/animals/pig.png" class="animal"></h2>
+        </li>
+        <li>
+            <h2><img src="../static/animals/cow.png" class="animal"></h2>
+        </li>
+        </ul>
+    </div>
+    <!-- Regular Catalog -->
+    <!-- Collapsible from W3 Schools: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+    <div class="catalogarea">
+        <div class="choppingboard">
+            <!-- Beef -->
+            <div class="dropdown">
+                <button type="button" class="collapsible">Beef</button>
+                <div class="content">
+                <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <!-- Poultry -->
+            <div class="dropdown">
+                <button type="button" class="collapsible">Poultry</button>
+                <div class="content">
+                <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <!-- Pork -->
+            <div class="dropdown">
+                <button type="button" class="collapsible">Pork</button>
+                <div class="content">
+                <p>Lorem ipsum...</p>
+                </div>
+            </div>
+            <!-- Seafood -->
+            <div class="dropdown">
+                <button type="button" class="collapsible">Seafood</button>
+                <div class="content">
+                <p>Lorem ipsum...</p>
+                </div>
+            </div>
+        </div>
+        <div ></div>
+    </div>
+
+    <!-- Script -->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+    </script>
 </body>
 
 </html>

@@ -25,15 +25,11 @@ def search_page():  #Search function
 
 @app.route("/loginPage")
 def login_page():   #Potential login
-    return render_template('meatCarousel.html')
+    return render_template('meatCatalog.html')
 
 @app.route("/meatCatalog")
 def meat_catalog():
     return render_template('meatCatalog.html')
-
-@app.route("/meatCarousel")
-def meat_carousel():
-    return render_template('meatCarousel.html')
 
 @app.route("/shoppingCart")
 def chopping_cart():

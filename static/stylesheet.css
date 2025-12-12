@@ -52,7 +52,7 @@
 }
 .bannerimage{
   width: 110%;
-  background-image: url("banner.png");
+  background-image: url("misc photos/banner.png");
   height: 250px;
   background-color: purple;
   background-position: center;
@@ -85,8 +85,29 @@
   width: 50px;
   height: 25px;
 }
+.catalogarea{
+  width: 75%;
+  margin-left: 12%;
+  margin-top: 4%;
+  border: 7px solid rgb(114, 68, 16);
+  border-radius: 25px;
+  background-image: url("misc photos/cuttingboard.jpg");
+}
 .choppingboard{
-  width: 75vw;
-  height: 500px;
-  border: 1px solid black;
+  height: 900px;
+  /* background-image: url("misc photos/cuttingboard.jpg"); */
+  display: table-row;
+}
+.dropdown{
+  display: table-cell;
+  /* width: 125px; */
+  padding: 20px;
+}
+.boardspacer{
+  display: table-cell;
+  width: 2500px;
+}
+.boradend{
+  display: table-cell;
+  width: 2500px;
 }
