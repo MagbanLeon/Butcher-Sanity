@@ -150,3 +150,16 @@
   background-image: url("meat/exotic.jpg");
   background-size: cover;
 }
+.specificmeat{
+  /* border: 1px solid rgb(234, 234, 234); */
+  overflow:hidden;
+  width:100%;
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  color: white;
+  font-size: large;
+}
+.active, .specificmeat:hover {
+  background-color: #b11c1c;
+}

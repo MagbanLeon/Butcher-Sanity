@@ -35,8 +35,12 @@ def meat_catalog():
 def chopping_cart():
     return render_template('shoppingCart.html')
 
+@app.route("/sirloinPage")
+def sirloinPage():
+    return render_template('sirloinInfo.html')
+
 #Routes for information pages
 
 
 
-app.run(debug=True, port=8080)
+app.run(debug=True, port=8090)
