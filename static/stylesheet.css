@@ -96,6 +96,9 @@
 .choppingboard{
   height: 900px;
   /* background-image: url("misc photos/cuttingboard.jpg"); */
+  /* display: table-row; */
+}
+.boardrow{
   display: table-row;
 }
 .dropdown{
@@ -110,4 +113,40 @@
 .boradend{
   display: table-cell;
   width: 2500px;
+}
+.background-tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+.beef{
+  background-image: url("meat/beef.png");
+  background-size: cover;
+}
+.pork{
+  background-image: url("meat/pork.jpg");
+  background-size: cover;
+}
+.poultry{
+  background-image: url("meat/poultry.jpg");
+  background-size: cover;
+}
+.seafood{
+  background-image: url("meat/seafood.jpg");
+  background-size: cover;
+}
+.lamb{
+  background-image: url("meat/lamb.jpg");
+  background-size: cover;
+}
+.venison{
+  background-image: url("meat/venison.png");
+  background-size: cover;
+}
+.largegame{
+  background-image: url("meat/largegame.jpg");
+  background-size: cover;
+}
+.exotic{
+  background-image: url("meat/exotic.jpg");
+  background-size: cover;
 }
