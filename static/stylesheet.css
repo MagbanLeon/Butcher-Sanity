@@ -18,10 +18,6 @@
   z-index: 9999;
   margin-left: -20px;
 }
-.blackbar{
-  border: 3px solid black;
-  margin-bottom: 0;
-}
 .verticalbar{
   border: 3px solid black;
   height: 50px;
@@ -59,6 +55,7 @@
   margin-top:5.45%;
   margin-left: -20px;
   border: 5px solid black;
+  background-size: cover;
 }
 
 .carouselSize{
@@ -162,4 +159,11 @@
 }
 .active, .specificmeat:hover {
   background-color: #b11c1c;
+}
+.motto{
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
