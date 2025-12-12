@@ -25,8 +25,7 @@ def search_page():  #Search function
 
 @app.route("/loginPage")
 def login_page():   #Potential login
-    print("bro")
-    return render_template('loginPage.html')
+    return render_template('meatCarousel.html')
 
 @app.route("/meatCatalog")
 def meat_catalog():

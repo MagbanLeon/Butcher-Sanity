@@ -3,14 +3,33 @@
 <head>
     <title>The Slaughter's on!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='carousel.css') }}">
 </head>
 <!-- 
 HTML Carousel:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels 
  -->
-<body>
+<body style="background-color:rgb(255, 231, 194);">
     <div>{% include 'navbar.html' %}</div>
     <div>meat carousel</div>
+    <div class="carouselSize">
+        <h1>Interactive Page Selection</h1>
+        <ul>
+        <li>
+            <h2>Page 1</h2>
+        </li>
+        <li>
+            <h2>Page 2</h2>
+        </li>
+        <li>
+            <h2>Page 3</h2>
+        </li>
+        <li>
+            <h2>Page 4</h2>
+        </li>
+        </ul>
+
+    </div>
 </body>
 
 </html>
