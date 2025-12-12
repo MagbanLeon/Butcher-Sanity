@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Slaughter's on!</title>
+    <title>Butcher Sanity</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
 </head>
 <!-- 
@@ -11,31 +11,9 @@ https://www.1001fonts.com/staypuft-font.html
 
 <body style="background-color:rgb(255, 231, 194);">
     <!-- Navigation Bar -->
-    <div class="navigationbar">
-        <a href="/loginPage"class="logoButton">   <!--Button For Homepage-->
-        <input type="image" src="../static/BSLogo.png" height="50px">
-        </a>
-        <div class="spacer1"></div>
-        <a href="/loginPage" class="buttonBox">   <!--Button For Meat Catalog-->
-            <input type="image" src="../static/steak.png" height="50px">
-        </a>
-        <!-- <a class="buttonBox">Meat Menu</a> -->
-        <div class="spacer2"></div><div class="verticalbar"></div><div class="spacer2"></div>
-        <a href="/loginPage" class="buttonBox">   <!--Button For SearchPage-->
-            <input type="image" src="../static/search.png" height="50px">
-        </a>
-        <div class="spacer2"></div><div class="verticalbar"></div><div class="spacer2"></div>
-        <a href="/loginPage" class="buttonBox">   <!--Button For ShoppingPage-->
-            <input type="image" src="../static/shoppingcart.png" height="50px">
-        </a>
-        <div class="spacer2"></div><div class="verticalbar"></div><div class="spacer2"></div>
-        <a href="/loginPage" class="buttonBox">   <!--Button For Settings-->
-            <input type="image" src="../static/gear.png" height="50px">
-        </a>
-        
-        
-        <div class="blackbar"></div>
-    </div>
+     <div>{% include 'navbar.html' %}</div>
+    <!-- Banner Image -->
+    <div class="bannerimage"></div>
 </body>
 
 </html>

@@ -15,9 +15,13 @@ app = Flask(__name__)
 def homepage(): #The homepage
     return render_template('homepage.html')
 
+@app.route("/home", methods = ['GET', 'POST'])
+def home(): #The homepage
+    return render_template('homepage.html')
+
 @app.route("/searchPage")
 def search_page():  #Search function
-    return render_template('homepage.html')
+    return render_template('searchPage.html')
 
 @app.route("/loginPage")
 def login_page():   #Potential login
@@ -26,15 +30,15 @@ def login_page():   #Potential login
 
 @app.route("/meatCatalog")
 def meat_catalog():
-    return render_template('homepage.html')
+    return render_template('meatCatalog.html')
 
 @app.route("/meatCarousel")
 def meat_carousel():
-    return render_template('homepage.html')
+    return render_template('meatCarousel.html')
 
 @app.route("/shoppingCart")
 def chopping_cart():
-    return render_template('homepage.html')
+    return render_template('shoppingCart.html')
 
 #Routes for information pages
 
