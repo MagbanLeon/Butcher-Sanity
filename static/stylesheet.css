@@ -168,21 +168,22 @@
   width: 50%;
 }
 .infoOrganization {
-  border: 3px solid rgb(0, 0, 0);
+  /* border: 3px solid rgb(0, 0, 0); */
   display: flex;
   justify-content: center; /* Centers horizontally */
-  align-items: center;
+  align-items: start;
   margin: 50px;
   margin-top: 130px;
-  /* padding: 50px; */
+  height: 1500px;
 }
 .infoTable{
-  display: table-row
+  display: table-row;
+  max-height: 100%
 }
 .infoLeft {
-  border: 3px solid rgb(204, 9, 9);
+  border-bottom: 3px solid rgb(204, 9, 9);
   width: 35%;
-  height: 150%;
+  /* min-height: 100%; */
   display: table-cell;
 }
 .infoRight {
@@ -190,4 +191,22 @@
   width: 60%;
   height: 150%;
   display: table-cell;
+}
+.categorytext{
+  color: #b31414;
+  text-decoration: underline;
+  font-size: 65px;
+  display: table-cell;
+}
+.typetext{
+  color: #b31414;
+  font-size: 65px;
+  display: table-cell;
+}
+.textcontainer{
+  display: table-row;
+}
+.imageInfo{
+  max-width: 99%;
+  border: 6px solid rgb(74, 11, 11);
 }

@@ -24,7 +24,7 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 30px;
   border-bottom: 5px solid rgb(134, 22, 22);
   margin-top: 20px;
 }
@@ -52,9 +52,10 @@
   /* padding: 18px; */
   display: none;
   overflow: hidden;
-  background-color: #847f7f;
+  background-color: transparent;
   width: 100%;
-  border: 1px solid black;
+  text-justify: inter-word;
+  color: purple;
 }
 .collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
