@@ -40,6 +40,10 @@ def chopping_cart():
 def sirloinPage():
     return render_template('sirloinInfo.html')
 
+@app.route("/toproundPage")
+def toproundPage():
+    return render_template('toproundInfo.html')
+
 
 
 app.run(debug=True, port=8090)
