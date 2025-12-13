@@ -181,7 +181,7 @@
   max-height: 100%
 }
 .infoLeft {
-  border-bottom: 3px solid rgb(204, 9, 9);
+  /* border-bottom: 3px solid rgb(204, 9, 9); */
   width: 35%;
   /* min-height: 100%; */
   display: table-cell;
