@@ -167,3 +167,27 @@
   margin-right: auto;
   width: 50%;
 }
+.infoOrganization {
+  border: 3px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  margin: 50px;
+  margin-top: 130px;
+  /* padding: 50px; */
+}
+.infoTable{
+  display: table-row
+}
+.infoLeft {
+  border: 3px solid rgb(204, 9, 9);
+  width: 35%;
+  height: 150%;
+  display: table-cell;
+}
+.infoRight {
+  /* border: 3px solid rgb(65, 17, 17); */
+  width: 60%;
+  height: 150%;
+  display: table-cell;
+}

@@ -14,12 +14,29 @@
   font-size: 20px;
   border: 1px solid black;
 }
+.collapsibleInfo {
+  background-color: transparent;
+  color: #b31414;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 5px solid rgb(134, 22, 22);
+  margin-top: 20px;
+}
 .secondrow{
   margin-top:60px;
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #00000020;
+}
+.collapsibleInfo:hover {
+  background-color:rgb(204, 170, 120);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -31,7 +48,22 @@
   width: 15vw;
   border: 1px solid black;
 }
+.contentInfo{
+  /* padding: 18px; */
+  display: none;
+  overflow: hidden;
+  background-color: #847f7f;
+  width: 100%;
+  border: 1px solid black;
+}
 .collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.collapsibleInfo:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: white;

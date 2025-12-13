@@ -3,11 +3,63 @@
 <head>
     <title>The Slaughter's on!</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='collapse.css') }}">
 </head>
 
-<body>
+<body style="background-color:rgb(255, 231, 194);">
     <div>{% include 'navbar.html' %}</div>
-    <div>search</div>
+    <div class="infoOrganization">
+        <div class="infoTable">
+            <div class="infoLeft">
+                <div>Beef- Sirloin</div>
+                <img src="../static/meat/beef.png" style="max-width: 100%;">
+            </div>
+            <div class="spacer1"></div>
+            <div class="infoRight">
+                <button type="button" class="collapsibleInfo">Beef</button>
+                <div class="contentInfo">Lipsum</div>
+                <button type="button" class="collapsibleInfo">Beef</button>
+                <div class="contentInfo">Lipsum</div>
+                <button type="button" class="collapsibleInfo">Beef</button>
+                <div class="contentInfo">Lipsum</div>
+            </div>
+        </div>
+        <!-- <div class="spacer1"></div> -->
+    </div>
+
+    <!-- Script -->
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+    </script>
+    <script>
+    var coll = document.getElementsByClassName("collapsibleInfo");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+    </script>
 </body>
 
 </html>
